@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 2500px;
+    background-color: #d6ce93;
+}
+
+.navbar {
+    background: #868e38;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;;
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #43471c;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20 px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #868e38;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#button {
+    text-decoration: none;
+}
+
+span {
+    background: #868e38;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    z-index: 1000;
+    border: 2px solid #868e38;
+}
+
+footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+.inputbox {
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputbox input {
+    width: 300px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #868e38;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 5px 45px 5px 20px;
+}
+
+.inputbox input::placeholder {
+    font-style: italic;
+}
+
+.inputbox i {
+    position: absolute;
+    right: 600px;
+    transform: translateY(107%);
+    font-size: 20px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: black;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.recomm {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+}
+
+.recomm h1 {
+    font-size: 50px;
+}
+
+.slider {
+    position: relative;
+    top: 20px;
+}
+
+.box1, .box2, .box3 {
+    height: 400px;
+    width: 430px;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+    border-radius: 40px;
+    display: inline-block;
+    z-index: 1;
+    background-color: rgba(134, 142, 56, 0.25);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider img {
+    position: relative;
+    top: 15px;
+    height: 225px;
+    width: 350px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+.slider a {
+    text-decoration: none;
+    color: black;
+}
+
+.recomm h2 {
+    height: 50px;
+    padding-top: 25px;
+}
+
+.search {
+    height: 300px;
+    width: 100%;
+    position: absolute; 
+    text-align: center;
+    top: 100%;
+}
+
+.search h1 {
+    font-size: 50px;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+}
+
+.search p {
+    width: 100%;
+    position: absolute;
+    margin: 20 px auto;
+    font-weight: 100;
+    line-height: 25px;
+    top: 35%;
+    text-align: center;
+}
+
+.search-bar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 25%;
+}
+
+.search-bar input {
+    height: 50px;
+    width: 300px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #868e38;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 5px 45px 5px 20px;
+    color: black;
+}
+
+.search-bar input::placeholder {
+    font-style: italic;
+    color: black;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 600px;
+    transform: translateY(107%);
+    font-size: 20px;
+}
+
+.search-results {
+    position: absolute; 
+    top: 140%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recipe-card {
+    color: black;
+    height: 400px;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    margin: 0 10px 50px;
+}
+
+.recipe-card h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    margin-top: 2px;
+}
+
+.recipe-card img {
+    border-radius: 40px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    overflow: auto; 
+}
+
+.modal-content {
+    background-color: #868e38;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: 100px auto; 
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    left: 1150px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    left: 1100px;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.liked {
+    color: red; 
+}  
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.modal-image {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+.modal-instructions {
+    list-style-position: inside;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.acc-content {
+    width: 100%;
+    text-align: center;
+}
+
+.acc-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.acc-content h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}

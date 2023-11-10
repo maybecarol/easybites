@@ -1,0 +1,68 @@
+/* Add this CSS in a separate file (e.g., styles.css) and link it to your HTML file. */
+
+/* Style the container */
+.container {
+  margin-top: 50px;
+}
+
+/* Style the panel */
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form heading */
+.panel-heading {
+  background-color: #337ab7;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style the form body */
+.panel-body {
+  padding: 20px;
+}
+
+/* Style form labels */
+label {
+  font-weight: bold;
+}
+
+/* Style form fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style radio buttons */
+.radio-inline {
+  margin-right: 15px;
+}
+
+/* Style the submit button */
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+/* Style the links */
+a {
+  margin-right: 15px;
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* Style the footer */
+.panel-footer {
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+}

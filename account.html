@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="accountLink" href="account.html">Account</a></li>
+                <li><a href="mailto:cadeshinee@gmail.com">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="acc-content">
+            <h1>Welcome, <span id="usernamePlaceholder"></span>!</h1>
+            <hr>
+            <h2>Your favorite recipes:</h2>
+            <div id="favoriteRecipesPlaceholder" class="recipe-box">
+                <!-- Favorite recipes will be loaded dynamically here -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2023, Easy Bites
+    </footer>
+    <script src="account.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="index.html"><img src="logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="mailto:cadeshinee@gmail.com">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Recipe Generator</h1>
+            <p>Input ingredients, Output recipes!</p>
+            <div>
+                <button id="redirectButton" type="button"><span></span>START</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2023, Easy Bites
+    </footer>
+    <script>
+        const redirectButton = document.getElementById('redirectButton');
+        redirectButton.addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
