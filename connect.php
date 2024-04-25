@@ -1,3 +1,4 @@
+//for signing in
 <?php
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
