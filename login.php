@@ -1,3 +1,4 @@
+//for login
 <?php
 // Get user input
 $email = $_POST['email'];
